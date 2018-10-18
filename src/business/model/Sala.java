@@ -14,6 +14,11 @@ public class Sala {
         this.nomeSala = numeroSala;
     }
 
+    public Sala(String nomeSala, boolean statusSala) {
+        this.nomeSala = nomeSala;
+        this.statusSala = statusSala;
+    }
+
     public boolean isStatusSala() {
         return statusSala;
     }
