@@ -7,27 +7,23 @@ package view;
 
 import java.util.*;
 import mapas.Data;
-import business.control.GerenciaMapa;
+import business.control.UsuarioControl;
 import mapas.TestaComparator;
 import business.model.Usuario;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author arthu
- */
-public class UsaMapas {
-
+public class Main {
+    /*
     public static void insereMapa(HashMap m, Usuario u) {
         m.put(u.getLogin(), u);
     }
 
     public static void editarMapa(Map m, Usuario u) {
     }
-
+    */
     public static void main(String[] args) {
 
-        GerenciaMapa op = new GerenciaMapa();
+        UsuarioControl op = new UsuarioControl();
         TestaComparator tc = new TestaComparator();
 
         Usuario user1 = new Usuario("Neymar", "123", new Data(12, 01, 97));
@@ -39,7 +35,7 @@ public class UsaMapas {
         op.insereMapa(hm, user2);
         op.insereMapa(hm, user3);
 
-        GerenciaMapa.printUsuario(hm);
+        UsuarioControl.printUsuario(hm);
 
         /**
          * ************************************************
@@ -48,7 +44,5 @@ public class UsaMapas {
         op.insereMapa(tm, user1);
         op.insereMapa(tm, user2);
         op.insereMapa(tm, user3);
-
     }
-
 }

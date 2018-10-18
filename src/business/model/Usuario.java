@@ -1,8 +1,10 @@
 package business.model;
 
+import java.io.Serializable;
+import mapas.Data;
 import mapas.Data;
 
-public class Usuario implements Comparable {
+public class Usuario implements Comparable, Serializable {
 
     private String login;
     String senha;
