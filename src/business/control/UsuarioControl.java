@@ -1,7 +1,5 @@
 package business.control;
 
-import Utils.PassException;
-import Utils.LoginException;
 import static business.control.validacao.validaUsuario;
 import java.util.*;
 import business.model.Usuario;
