@@ -10,7 +10,7 @@ public class ReservaSala {
     private Hora hInicial;
     private Hora hFinal;
     private String login;
-    private String status; //aberta, recebida, aprovada, rejeitada, concluída, excluida
+    private String status; //Enviada, Aprovada, Rejeitada, Concluída, Excluida
 
     public ReservaSala(String nomeSala, Data data, Hora hInicial, Hora hFinal, String login) {
         this.nomeSala = nomeSala;

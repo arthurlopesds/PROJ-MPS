@@ -2,8 +2,8 @@ package business.model;
 
 public class Sala {
     private String nomeSala;
-    //private InfraEstrutura infra; 
-    //private HorariosSala horario;
+    private InfraEstrutura infra; 
+    private HorariosSala horario;
     private boolean statusSala;
 
     public String getNumeroSala() {

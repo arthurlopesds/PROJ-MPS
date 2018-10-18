@@ -17,6 +17,7 @@ public class ReservaControl {
     public void SolicitarReserva(String nomeSala, Data data, Hora hInicial, Hora hFinal, String login){
         solicitacoes.add(new ReservaSala(nomeSala, data, hInicial, hFinal, login));
         System.out.println("Sua solicitação foi feita com sucesso. Verifique o andamento da sua solicitação em Acompanhar Reserva.");
+        //solicitacoes.element().setStatus("Enviada");
     }
     
     public void CriarReserva(){
@@ -25,12 +26,12 @@ public class ReservaControl {
             reservas.add(new ReservaSala(solicitacoes.element().getNomeSala(), solicitacoes.element().getData(), solicitacoes.element().gethInicial(),
                          solicitacoes.element().gethFinal(), solicitacoes.element().getLogin()));
             reservas.element().CriaId();
+            //reservas.element().setStatus("Aprovada");
             solicitacoes.remove();
         }       
     }
 
     public void AlterarStatusR(){
-        //
-        Iterator<ReservaSala> it = solicitacoes.iterator();
+        
     }
 }
