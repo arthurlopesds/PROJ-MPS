@@ -1,4 +1,4 @@
-package mapas;
+package business.model;
 
 public class Data {
     private int dia;

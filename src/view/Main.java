@@ -6,7 +6,7 @@
 package view;
 
 import java.util.*;
-import mapas.Data;
+import business.model.Data;
 import business.control.UsuarioControl;
 import mapas.TestaComparator;
 import business.model.Usuario;

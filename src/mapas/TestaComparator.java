@@ -1,5 +1,6 @@
 package mapas;
 
+import business.model.Data;
 import business.model.Usuario;
 import java.util.*;
 
