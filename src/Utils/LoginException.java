@@ -1,4 +1,4 @@
-package business.control;
+package Utils;
 import business.model.Usuario;
 
 public class LoginException extends Exception{
