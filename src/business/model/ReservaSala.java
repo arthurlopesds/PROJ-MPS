@@ -3,28 +3,28 @@ package business.model;
 import java.text.SimpleDateFormat;
 
 public class ReservaSala {
-    private Sala sala;
+    private String nomeSala;
     private Data data;
     private Hora hInicial;
     private Hora hFinal;
-    private Usuario usuario;
+    private String login;
     private String status; //aberta, recebida, aprovada, rejeitada, concluída, excluida
 
-    public ReservaSala(Sala sala, Data data, Hora hInicial, Hora hFinal, Usuario usuario) {
-        this.sala = sala;
+    public ReservaSala(String nomeSala, Data data, Hora hInicial, Hora hFinal, String login) {
+        this.nomeSala = nomeSala;
         this.data = data;
         this.hInicial = hInicial;
         this.hFinal = hFinal;
-        this.usuario = usuario;
+        this.login = login;
         this.status = "aberta";
     }
 
-    public Sala getSala() {
-        return sala;
+    public String getNomeSala() {
+        return nomeSala;
     }
 
-    public void setSala(Sala sala) {
-        this.sala = sala;
+    public void setNomeSala(String nomeSala) {
+        this.nomeSala = nomeSala;
     }
 
     public Data getData() {
@@ -51,12 +51,12 @@ public class ReservaSala {
         this.hFinal = hFinal;
     }
 
-    public Usuario getUsuario() {
-        return usuario;
+    public String getLogin() {
+        return login;
     }
 
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
+    public void setLogin(String login) {
+        this.login = login;
     }
 
     public String getStatus() {
@@ -68,7 +68,7 @@ public class ReservaSala {
     }
     
     public String toString(){
-        return "A reserva da Sala" + this.getSala().getNumeroSala() + " feita por " + this.getUsuario().getLogin() +
+        return "A reserva da Sala" + this.getNomeSala() + " feita por " + this.getLogin() +
                ", para o dia " + this.getData() + " às " + this.gethInicial() + " à " + this.gethFinal() +
                ", se encontra em " + this.getStatus();
     }

@@ -20,7 +20,5 @@ public class Sala {
 
     public void setStatusSala(boolean statusSala) {
         this.statusSala = statusSala;
-    }
-    
-    
+    }   
 }

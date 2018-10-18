@@ -2,7 +2,7 @@ package business.control;
 
 import business.model.Usuario;
 
-public class validacao {
+public class Validacao {
     public static boolean validaUsuario(Usuario u) throws LoginException, PassException {
         boolean login = validaLogin(u);
         boolean pass = validaSenha(u);

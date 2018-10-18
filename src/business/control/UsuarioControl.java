@@ -1,6 +1,6 @@
 package business.control;
 
-import static business.control.validacao.validaUsuario;
+import static business.control.Validacao.validaUsuario;
 import java.util.*;
 import business.model.Usuario;
 import infra.Persistencia;
