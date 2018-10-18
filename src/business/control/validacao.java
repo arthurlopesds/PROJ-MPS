@@ -1,5 +1,7 @@
 package business.control;
 
+import Utils.PassException;
+import Utils.LoginException;
 import business.model.Usuario;
 
 public class validacao {
