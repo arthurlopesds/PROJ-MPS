@@ -16,14 +16,6 @@ public class UsuarioControl {
     }
 
     public void editaMapa(String key, Usuario u) throws LoginException, PassException{
-        /* Buscar pela chave, e alterar o usuário
-        Set<String> kyes = usuarios.keySet();
-        for (String chave : kyes) {
-            if (chave == key) {
-                
-            }
-        }
-        */
         if(validaUsuario(u))
             usuarios.put(key, u);
     }

@@ -37,9 +37,6 @@ public class Main {
 
         UsuarioControl.printUsuario(hm);
 
-        /**
-         * ************************************************
-         */
         /*
         Map<String, Usuario> tm = new TreeMap<String, Usuario>();
         op.insereMapa(tm, user1);
