@@ -1,8 +1,8 @@
-package mapas.negocios.controle;
+package business.control;
 
 import java.util.*;
-import mapas.negocios.modelo.Usuario;
-import mapas.persistencia.Persistencia;
+import business.model.Usuario;
+import util.Persistencia;
 
 public class GerenciaMapa {
 

@@ -1,6 +1,6 @@
 package mapas;
 
-import mapas.negocios.modelo.Usuario;
+import business.model.Usuario;
 import java.util.*;
 
 public class TestaComparator implements Comparator<Usuario> {

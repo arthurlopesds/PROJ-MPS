@@ -1,4 +1,4 @@
-package mapas.persistencia;
+package util;
 
 import java.io.EOFException;
 import java.io.File;
@@ -10,7 +10,7 @@ import java.io.ObjectOutputStream;
 //import java.util.LinkedList;
 import java.util.HashMap;
 import java.util.Map;
-import mapas.negocios.modelo.Usuario;
+import business.model.Usuario;
 
 public class Persistencia {
 

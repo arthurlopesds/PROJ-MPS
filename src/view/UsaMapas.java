@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package mapas.view;
+package view;
 
 import java.util.*;
 import mapas.Data;
-import mapas.negocios.controle.GerenciaMapa;
+import business.control.GerenciaMapa;
 import mapas.TestaComparator;
-import mapas.negocios.modelo.Usuario;
+import business.model.Usuario;
 import javax.swing.JOptionPane;
 
 /**

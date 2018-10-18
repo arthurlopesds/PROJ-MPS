@@ -1,6 +1,6 @@
-package mapas.negocios.controle;
+package business.control;
 
-import mapas.negocios.modelo.Usuario;
+import business.model.Usuario;
 
 public class validacao {
 

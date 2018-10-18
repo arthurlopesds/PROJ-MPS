@@ -1,4 +1,4 @@
-package mapas.negocios.modelo;
+package business.model;
 
 import mapas.Data;
 

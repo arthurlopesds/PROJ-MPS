@@ -1,6 +1,6 @@
 package mapas;
 
-import mapas.negocios.modelo.Usuario;
+import business.model.Usuario;
 import java.util.Comparator;
 
 public class CompararNome implements Comparator<Usuario> {
