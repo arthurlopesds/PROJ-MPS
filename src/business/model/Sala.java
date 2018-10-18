@@ -1,17 +1,17 @@
 package business.model;
 
 public class Sala {
-    private String numeroSala;
+    private String nomeSala;
     //private InfraEstrutura infra; 
     //private HorariosSala horario;
     private boolean statusSala;
 
     public String getNumeroSala() {
-        return numeroSala;
+        return nomeSala;
     }
 
     public void setNumeroSala(String numeroSala) {
-        this.numeroSala = numeroSala;
+        this.nomeSala = numeroSala;
     }
 
     public boolean isStatusSala() {
