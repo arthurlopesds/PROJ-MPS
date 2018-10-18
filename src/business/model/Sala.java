@@ -6,17 +6,18 @@ public class Sala {
     private HorariosSala horario;
     private boolean statusSala;
 
-    public String getNumeroSala() {
+    public Sala(String nomeSala, InfraEstrutura infra, HorariosSala horario, boolean statusSala) {
+        this.nomeSala = nomeSala;
+        this.infra = infra;
+        this.horario = horario;
+        this.statusSala = statusSala;
+    }
+    public String getNomeSala() {
         return nomeSala;
     }
 
-    public void setNumeroSala(String numeroSala) {
-        this.nomeSala = numeroSala;
-    }
-
-    public Sala(String nomeSala, boolean statusSala) {
+    public void setNomeSala(String nomeSala) {
         this.nomeSala = nomeSala;
-        this.statusSala = statusSala;
     }
 
     public boolean isStatusSala() {
@@ -26,4 +27,6 @@ public class Sala {
     public void setStatusSala(boolean statusSala) {
         this.statusSala = statusSala;
     }   
+    
+    
 }
