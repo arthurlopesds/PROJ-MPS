@@ -17,7 +17,7 @@ public class Funcionario extends Usuario{
     }
     
     public void SolicitarReserva(String nomeSala, Data data, Hora hInicial, Hora hFinal, String login){
-        // CriarReserva()
+        // SolicitarReserva()
     }
     
     public String VisualizarStatusReserva(ReservaSala r){

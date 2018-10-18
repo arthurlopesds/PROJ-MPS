@@ -6,6 +6,10 @@ public class FuncCoordenacao extends Funcionario {
         super(login, senha, data_nascimento, cargo);
     }
     
+    public void VisualizarSolicitacoes(){
+        //percorre a lista de solicitações e cria as reservas
+    }
+    
     public void CriarReserva(){
         
     }

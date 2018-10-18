@@ -3,6 +3,8 @@ package business.model;
 import java.text.SimpleDateFormat;
 
 public class ReservaSala {
+    private static int sequence = 0;
+    private int id;
     private String nomeSala;
     private Data data;
     private Hora hInicial;
@@ -17,6 +19,14 @@ public class ReservaSala {
         this.hFinal = hFinal;
         this.login = login;
         this.status = "aberta";
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void CriaId() {
+        this.id = sequence++;
     }
 
     public String getNomeSala() {
