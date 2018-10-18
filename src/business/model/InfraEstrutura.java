@@ -36,6 +36,7 @@ public class InfraEstrutura {
 
     @Override
     public String toString() {
-        return "O "  + nome + ", está " + status ;
+        return "O "  + this.getNome() + ", está " + this.getStatus() ;
     }
 }
+
