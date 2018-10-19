@@ -43,5 +43,14 @@ public class Main {
         op.insereMapa(tm, user2);
         op.insereMapa(tm, user3);
         */
+        
+        //STRATEGY
+        Contexto context = new Contexto(new LoginContaApp());
+        System.out.println("Conta APP: " + context.realizaLogin(1));
+        
+        context = new Contexto(new LoginSIGAA());
+        System.out.println("Conta SIGAA " + context.realizaLogin(2));
+        
+        
     }
 }
