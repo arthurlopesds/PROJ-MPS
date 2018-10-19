@@ -25,7 +25,7 @@ public class ReservaSala {
         return id;
     }
 
-    public void CriaId() {
+    public void criaId() {
         this.id = sequence++;
     }
 

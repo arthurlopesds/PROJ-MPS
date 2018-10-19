@@ -25,7 +25,7 @@ public class ReservaControl {
         while(!solicitacoes.isEmpty()){
             reservas.add(new ReservaSala(solicitacoes.element().getNomeSala(), solicitacoes.element().getData(), solicitacoes.element().gethInicial(),
                          solicitacoes.element().gethFinal(), solicitacoes.element().getLogin()));
-            reservas.element().CriaId();
+            reservas.element().criaId();
             //reservas.element().setStatus("Aprovada");
             solicitacoes.remove();
         }       
