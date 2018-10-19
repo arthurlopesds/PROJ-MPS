@@ -1,10 +1,11 @@
 package business.model;
 
-public class Sala {
+public abstract class Sala {
     private String nomeSala;
     private InfraEstrutura infra; 
     private HorariosSala horario;
     private boolean statusSala;
+    private String tipoSala;
 
     public Sala(String nomeSala, InfraEstrutura infra, HorariosSala horario, boolean statusSala) {
         this.nomeSala = nomeSala;
@@ -26,7 +27,34 @@ public class Sala {
 
     public void setStatusSala(boolean statusSala) {
         this.statusSala = statusSala;
-    }   
+    }
+    
+    public String getTipoSala(){
+        return tipoSala;
+    }
+
+    public void setTipoSala(String tipoSala){
+        this.tipoSala = tipoSala;
+    }
+
+
+    public String Status(boolean statusSala){
+        
+        if (this.statusSala == true){
+            return "Disponível";
+        }
+        else{
+            return "Ocupada";
+        }
+
+
+    }
+    
+    @Override
+    public String toString(){
+        return "A sala" + this.nomeSala + "está " + this.Status(this.statusSala);
+    }
+
     
     
 }
