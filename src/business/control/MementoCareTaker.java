@@ -5,10 +5,24 @@
  */
 package business.control;
 
+import java.util.HashMap;
+
 /**
  *
- * @author arthu
+ * @author arthur
  */
 public class MementoCareTaker {
+    protected UsuarioMemento usuario;
     
+    public MementoCareTaker(){
+        usuario = new UsuarioMemento(new HashMap<>());
+    }
+
+    public  void addMemento(UsuarioMemento usuarioMemento){
+        this.usuario = usuarioMemento;
+    }
+
+    public UsuarioMemento getUltimoEstadoSalvo(){
+        return usuario;
+    }
 }

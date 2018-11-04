@@ -4,11 +4,21 @@
  * and open the template in the editor.
  */
 package business.control;
+import business.model.Usuario;
+import java.util.HashMap;
 
 /**
  *
- * @author arthu
+ * @author arthur
  */
 public class UsuarioMemento {
+    HashMap <String,Usuario> usuario;
     
+    public UsuarioMemento(HashMap<String,Usuario> usuario){
+        this.usuario = usuario;
+    }
+    
+    public HashMap<String,Usuario> getEstadoSalvo(){
+        return usuario;
+    }
 }

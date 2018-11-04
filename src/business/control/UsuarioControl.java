@@ -9,10 +9,12 @@ public class UsuarioControl {
 
     Persistencia p = new Persistencia();
     HashMap<String, Usuario> usuarios;
+    MementoCareTaker caretaker;
 
     public void insereMapa(Usuario u) throws LoginException, PassException {
         if(validaUsuario(u))
             usuarios.put(u.getLogin(), u);
+        caretaker.addMemento(new UsuarioMemento(usuarios));
     }
 
     public void editaMapa(String key, Usuario u) throws LoginException, PassException{
@@ -26,6 +28,8 @@ public class UsuarioControl {
         } else {
             System.out.println("O Usuário não foi encontrado.");
         }
+        HashMap<String,Usuario> estado = usuarios;
+        caretaker.addMemento(new UsuarioMemento(estado));
     }
 
     public static void printUsuario(Map m) {
@@ -34,5 +38,9 @@ public class UsuarioControl {
             Usuario usuario = hm.next().getValue();
             System.out.println("Login: " + usuario.getLogin() + "Senha: " + usuario.getSenha());
         }
+    }
+    
+    public void desfazer(){
+        usuarios = caretaker.getUltimoEstadoSalvo().getEstadoSalvo();
     }
 }
