@@ -9,8 +9,6 @@ public class Contexto {
     }
     
     public  int realizaLogin(int op){
-    
-     return strategy.FazerLogin(op);
-
+        return strategy.FazerLogin(op);
     }
 }

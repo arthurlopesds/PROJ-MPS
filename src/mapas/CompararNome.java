@@ -9,7 +9,6 @@ public class CompararNome implements Comparator<Usuario> {
         int retorno = o1.getLogin().compareTo(o2.getLogin());
         if (retorno == 0){
             return o1.getSenha().compareTo(o2.getSenha());
-        
         }
         return retorno;
     }

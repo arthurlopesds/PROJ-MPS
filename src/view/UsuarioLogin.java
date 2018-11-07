@@ -11,10 +11,5 @@ public class UsuarioLogin {
         System.out.println("Digite 1 para realizar o login com sua conta do aplicativo \n");
         System.out.println("Digite 2 para realizar o login com sua conta do SIGAA\n");   
        
-      }
-    
-    
-    
-    
-    
+      } 
 }

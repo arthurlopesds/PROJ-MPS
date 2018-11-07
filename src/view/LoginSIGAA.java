@@ -12,7 +12,5 @@ public class LoginSIGAA implements Login{
         System.out.println("Digite sua senha:\n");
         String senha = scan.nextLine();
         return 1;
-        
     }
-    
 }
