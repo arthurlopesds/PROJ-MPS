@@ -43,4 +43,9 @@ public class UsuarioControl {
     public void desfazer(){
         usuarios = caretaker.getUltimoEstadoSalvo().getEstadoSalvo();
     }
+    
+    public UsuarioControl(){
+        caretaker = new MementoCareTaker();
+        caretaker.addMemento(new UsuarioMemento(usuarios));
+    }
 }
