@@ -4,7 +4,7 @@ import static business.control.Validacao.validaUsuario;
 import business.model.Usuario;
 import java.util.HashMap;
 
-public class AddUsuario implements Command{
+public class AddUsuarioCommand implements Command{
     
     MementoCareTaker caretaker;
     

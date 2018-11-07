@@ -1,6 +1,6 @@
 package business.model;
 
-public class FactorySala {
+public class FactorySala { // Factory Method
     public Sala getSala(String nomeSala, InfraEstrutura infra, HorariosSala horario, boolean statusSala, String tipoSala){
  	if(tipoSala.equalsIgnoreCase("Auditorio"))
             return new Auditorio(nomeSala,infra,horario,statusSala);

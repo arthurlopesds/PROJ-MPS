@@ -16,12 +16,9 @@ public class Funcionario extends Usuario{
         this.cargo = cargo;
     }
     
-    public void SolicitarReserva(String nomeSala, Data data, Hora hInicial, Hora hFinal, String login){
-        // SolicitarReserva()
-    }
+    public void SolicitarReserva(String nomeSala, Data data, Hora hInicial, Hora hFinal, String login){}
     
     public String VisualizarStatusReserva(ReservaSala r){
-        //return VisualizarStatus();
         return "";
     }
 }

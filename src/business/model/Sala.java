@@ -13,6 +13,7 @@ public abstract class Sala {
         this.horario = horario;
         this.statusSala = statusSala;
     }
+    
     public String getNomeSala() {
         return nomeSala;
     }
@@ -37,24 +38,15 @@ public abstract class Sala {
         this.tipoSala = tipoSala;
     }
 
-
     public String Status(boolean statusSala){
-        
-        if (this.statusSala == true){
+        if (this.statusSala == true)
             return "Disponível";
-        }
-        else{
+        else
             return "Ocupada";
-        }
-
-
     }
     
     @Override
     public String toString(){
         return "A sala" + this.nomeSala + "está " + this.Status(this.statusSala);
     }
-
-    
-    
 }

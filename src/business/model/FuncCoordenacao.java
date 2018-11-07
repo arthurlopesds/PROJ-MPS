@@ -10,11 +10,7 @@ public class FuncCoordenacao extends Funcionario {
         //percorre a lista de solicitações e cria as reservas
     }
     
-    public void CriarReserva(){
-        
-    }
+    public void CriarReserva(){}
     
-    public void AlterarReserva(){
-        
-    }
+    public void AlterarReserva(){}
 }

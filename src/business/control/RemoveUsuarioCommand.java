@@ -3,7 +3,7 @@ package business.control;
 import business.model.Usuario;
 import java.util.HashMap;
 
-public class RemoveUsuario implements Command{
+public class RemoveUsuarioCommand implements Command{
     MementoCareTaker caretaker;
     
     @Override
